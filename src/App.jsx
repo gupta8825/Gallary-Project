@@ -27,7 +27,7 @@ const App = () => {
     printUserData = userData.map(function (elem, index) {
       return (
         <div key={index}>
-       <Card elem={elem}/>
+          <Card elem={elem} />
         </div>
       );
     });
@@ -37,10 +37,14 @@ const App = () => {
     <div className="bg-black overflow-auto h-screen p-4 text-white">
       <div className=" flex h-[82%] flex-wrap gap-4">{printUserData}</div>
 
-      <div className="flex justify-center mt-10 fixed-center gap-6 items-center p-4">
+      <div
+        className="flex justify-center mt-10 fixed-center gap-6 fixed bottom-0 left-0 w-full p-4 
+     text-white text-center items-center p-4"
+      >
         {/* //Previous Button */}
 
         <button
+          style={{ opacity: index == 1 ? 0.5 : 1 }}
           onClick={() => {
             if (index > 1) {
               setIndex(index - 1);
@@ -51,6 +55,9 @@ const App = () => {
         >
           Previous
         </button>
+        <h4 className="bg-amber-400 text-black font-bold p-1 rounded bg-indigo-500 shadow-lg shadow-indigo-500/50 ">
+          page {index}
+        </h4>
 
         {/* ///Next Button */}
 
