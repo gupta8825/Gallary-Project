@@ -38,8 +38,8 @@ const App = () => {
       <div className=" flex h-[82%] flex-wrap gap-4">{printUserData}</div>
 
       <div
-        className="flex justify-center mt-10 fixed-center gap-6 fixed bottom-0 left-0 w-full p-4 
-     text-white text-center items-center p-4"
+        className="flex justify-center mt-10 gap-6 fixed bottom-0 left-0 w-full p-4 
+     text-white text-center items-center "
       >
         {/* //Previous Button */}
 
@@ -55,7 +55,7 @@ const App = () => {
         >
           Previous
         </button>
-        <h4 className="bg-amber-400 text-black font-bold p-1 rounded bg-indigo-500 shadow-lg shadow-indigo-500/50 ">
+        <h4 className=" text-black font-bold p-1 rounded bg-indigo-500 shadow-lg shadow-indigo-500/50 ">
           page {index}
         </h4>
 
